@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Caddy
+# Runs Caddy
+# ==============================================================================
+
+exec caddy -conf '/config/addon-caddy/Caddyfile'
