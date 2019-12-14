@@ -5,20 +5,20 @@
 # ==============================================================================
 
 # Creates configuration folder if it does not exist.
-if ! bashio::fs.directory_exists '/config/addon-caddy'; then
-    bashio::log "Creating addon-caddy folder in /config."
-    mkdir /config/addon-caddy \
-        || bashio::exit.nok "Could not create /config/addon-caddy."
+if ! bashio::fs.directory_exists '/share/addon-caddy'; then
+    bashio::log "Creating addon-caddy folder in /share."
+    mkdir /share/addon-caddy \
+        || bashio::exit.nok "Could not create /share/addon-caddy."
 fi
 
 # Creates Caddyfile on first start.
-if ! bashio::fs.file_exists '/config/addon-caddy/Caddyfile'; then
+if ! bashio::fs.file_exists '/share/addon-caddy/Caddyfile'; then
     bashio::log "Creating Caddyfile."
-    touch /config/addon-caddy/Caddyfile \
+    touch /share/addon-caddy/Caddyfile \
         || bashio::exit.nok "Could not create Caddyfile."
 fi
 
-# Check for empty config file
-if [ ! -s /config/addon-caddy/Caddyfile ]; then
+# Check for empty Caddyfile file
+if [ ! -s /share/addon-caddy/Caddyfile ]; then
     bashio::exit.nok "Your Caddyfile is empty! Please add a configuration and restart the addon."
 fi
