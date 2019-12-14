@@ -6,4 +6,4 @@
 
 CADDYPATH='/ssl'
 
-exec caddy -conf '/share/addon-caddy/Caddyfile'
+exec caddy -conf '/share/addon-caddy/Caddyfile' -agree
