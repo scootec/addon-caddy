@@ -4,4 +4,6 @@
 # Runs Caddy
 # ==============================================================================
 
+CADDYPATH='/ssl'
+
 exec caddy -conf '/share/addon-caddy/Caddyfile'

@@ -1,6 +1,6 @@
 {
   "name": "Caddy",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "slug": "caddy",
   "description": "Caddy add-on by Community Hass.io Add-ons",
   "url": "https://github.com/scoootec/addon-caddy",
@@ -13,7 +13,7 @@
     "80/tcp": 80,
     "443/tcp": 443
   },
-  "map": ["share:rw"],
+  "map": ["share:rw", "ssl:rw"],
   "options": {},
   "schema": {}
 }
