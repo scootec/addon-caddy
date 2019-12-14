@@ -1,6 +1,6 @@
 {
   "name": "Caddy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "slug": "caddy",
   "description": "Caddy add-on by Community Hass.io Add-ons",
   "url": "https://github.com/scoootec/addon-caddy",

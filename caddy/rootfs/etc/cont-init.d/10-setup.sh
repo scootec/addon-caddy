@@ -19,6 +19,6 @@ if ! bashio::fs.file_exists '/config/addon-caddy/Caddyfile'; then
 fi
 
 # Check for empty config file
-if [ -s '/config/addon-caddy/Caddyfile' ]; then
+if [ -s /config/addon-caddy/Caddyfile ]; then
     bashio::exit.nok "Your Caddyfile is empty! Please add a configuration and restart the addon."
 fi
