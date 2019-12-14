@@ -4,4 +4,4 @@
 # Runs Caddy
 # ==============================================================================
 
-exec caddy -conf '/config/addon-caddy/Caddyfile'
+exec caddy -conf '/share/addon-caddy/Caddyfile'
